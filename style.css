@@ -1,0 +1,109 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+.container {
+  width: 25%;
+  margin: 25vh auto;
+  border-radius: 10px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  margin: 20px 0 10px 0;
+}
+p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.rating-units:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.circe-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: hsl(213, 19%, 20%);
+  border-radius: 50%;
+}
+.selected {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+button {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+.thanks {
+  text-align: center;
+}
+.thanks-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 30px;
+}
+.selection-message {
+  display: inline-block;
+  background-color: hsl(213, 19%, 20%);
+  margin: auto;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: hsl(25, 97%, 53%);
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 70%;
+  }
+  h1 {
+    font-size: 20px;
+    margin: 15px 0 10px 0;
+  }
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 10px;
+  }
+}
